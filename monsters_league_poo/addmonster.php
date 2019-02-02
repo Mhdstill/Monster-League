@@ -49,20 +49,20 @@
         </div>
 		
 		<div class="inscription">
-			<form method="POST" action="test_connexion.php">
+			<form method="POST" action="addToBDD.php">
 			
 				<h2 class="text-center">Add monster</h2> <br />
-				<label for="Pseudo">Pseudo</label> <br />
-				<input type="text" name="Pseudo"> <br /> <br />
+				<label for="Name">Name</label> <br />
+				<input type="text" name="name"> <br /> <br />
 				
 				<label for="Strength">Strength</label> <br />
-				<input type="text" name="Strength"> <br /> <br />
+				<input type="text" name="strength"> <br /> <br />
 				
 				<label for="Life">Life</label> <br />
-				<input type="text" name="Life"> <br /> <br />
+				<input type="text" name="life"> <br /> <br />
 				
 				<label for="Type">Type</label> <br />
-				<input type="text" name="Type"> <br /> <br />
+				<input type="text" name="type"> <br /> <br />
 				
 				<button class="btn-submit" id="btn-a" type="submit">Sumbit</button>
 				<button class="btn-cancel"><a href="connexion.php" id="btn-a"> Cancel </a> </button>
