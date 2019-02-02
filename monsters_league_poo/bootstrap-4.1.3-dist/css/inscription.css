@@ -1,0 +1,50 @@
+.inscription{
+	border : solid 1px #D8D8D8;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:5%;
+	text-align:center;
+	padding-bottom:40px;
+}
+
+input{
+	width:50%;
+	height:35px;
+	border : solid 1px #D8D8D8;
+	border-radius:4px;
+}
+
+.btn-submit{
+	background-color: rgb(255,167,0);
+	border: solid 1px rgb(255,167,0);
+	height:37px;
+	border-radius:3px;
+	opacity:0.85;
+	width:80px;
+
+}
+
+.btn-submit:hover{
+	opacity:1;
+}
+
+#btn-a{
+	color:white;
+	text-decoration:none;
+	
+}
+
+.btn-cancel{
+	background-color: rgb(216,57,57);
+	border: solid 1px rgb(216,57,57);
+	height:37px;
+	margin-left:70px;
+	border-radius:3px;
+	opacity:0.85;
+	width:80px;
+
+}
+
+.btn-cancel:hover{
+	opacity:1;
+}
