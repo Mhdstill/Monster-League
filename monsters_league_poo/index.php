@@ -30,6 +30,14 @@ $monsters = getMonsters();
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
+					
+					<li>
+                        <a class="nav-link" href="addmonster.php">Add Monster<span class="sr-only">(current)</span></a>
+                    </li>
+					
+					<li>
+                        <a class="nav-link" href="delmonster.php">Delete Monster<span class="sr-only">(current)</span></a>
+                    </li>
                 </ul>
 
                 <form class="form-inline my-2 my-lg-0">
@@ -75,7 +83,7 @@ $monsters = getMonsters();
                         <select class=" form-control" name="first_monster_name">
                             <option value="">Choose a Monster</option>
                             <?php foreach ($monsters as $key => $monster) { ?>
-                                <option value="<?php echo $key; ?>"><?php echo $monster['name']; ?></option>
+                                <option value="<?php echo $key; ?>"><?php echo $monster->name; ?></option>
                             <?php } ?>
                         </select>
                         <br>
@@ -84,7 +92,7 @@ $monsters = getMonsters();
                         <select class="form-control" name="second_monster_name">
                             <option value="">Choose a Monster</option>
                             <?php foreach ($monsters as $key => $monster) { ?>
-                                <option value="<?php echo $key; ?>"><?php echo $monster['name']; ?></option>
+                                <option value="<?php echo $key; ?>"><?php echo $monster->name; ?></option>
                             <?php } ?>
                         </select>
                         <br>
