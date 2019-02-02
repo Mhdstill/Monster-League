@@ -1,11 +1,29 @@
 <?php
 
 function getMonsters(){
-	$monster1 = new Monster("Domovoï",30,300,"water");
-	$monster2 = new Monster("Wendigos",100,450,"earth");
-	$monster3 = new Monster("Thunderbird",400,500,"air");
-	$monster4 = new Monster("Sirrush",250,1500,"fire");
-	return $monsters = [ $monster1, $monster2, $monster3, $monster4 ];
+	
+$monsters=array();
+$i=0;
+
+try
+{
+	$bdd = new PDO('mysql:host=localhost;dbname=monsterleague;charset=utf8', 'mehdi', 'zenmaines93');
+}
+catch (Exception $e)
+{
+        die('Erreur : ' . $e->getMessage());
+}
+
+$reponse = $bdd->query('SELECT  * FROM monster');
+
+while ($donnees = $reponse->fetch())
+{ 
+	$monster = new Monster($donnees['id'],$donnees['name'],$donnees['strength'],$donnees['life'],$donnees['type']);
+	$monsters[$i]=$monster;
+	$i=$i+1;
+
+}
+	return $monsters;
 	
 	
 }

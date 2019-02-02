@@ -2,17 +2,24 @@
 
 class Monster {
 	
+	public $id;
 	public $name;
 	public $strength;
 	public $life;
 	public $type;
 	
-	function __construct($name, $strength, $life, $type){
+	
+	function __construct($id, $name, $strength, $life, $type){
+		$this->id=$id;
 		$this->name=$name;
 		$this->strength=$strength;
 		$this->life=$life;
 		$this->type=$type;
 
+	}
+	
+	function getId(){
+		return $this->id;
 	}
 	
 	function getName(){

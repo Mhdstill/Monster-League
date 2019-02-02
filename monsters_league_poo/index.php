@@ -35,9 +35,7 @@ $monsters = getMonsters();
                         <a class="nav-link" href="addmonster.php">Add Monster<span class="sr-only">(current)</span></a>
                     </li>
 					
-					<li>
-                        <a class="nav-link" href="delmonster.php">Delete Monster<span class="sr-only">(current)</span></a>
-                    </li>
+					
                 </ul>
 
                 <form class="form-inline my-2 my-lg-0">
@@ -62,6 +60,7 @@ $monsters = getMonsters();
                         <th>Strength</th>
                         <th>Life</th>
                         <th>Type</th>
+						<th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -71,6 +70,7 @@ $monsters = getMonsters();
                             <td><?php echo $monster->getStrength(); ?></td>
                             <td><?php echo $monster->getLife(); ?></td>
                             <td><?php echo $monster->getTypee(); ?></td>
+							<td><a href="sup.php?id=<?php echo $monster->getId()?>">Supprimer</a>
                         </tr>
                     <?php } ?>
                 </tbody>

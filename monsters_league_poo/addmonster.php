@@ -26,10 +26,7 @@
 					<li class="nav-item active">
                         <a class="nav-link" href="index.php">Add Monster <span class="sr-only">(current)</span></a>
                     </li>
-					
-					<li>
-                        <a class="nav-link" href="delmonster.php">Delete Monster<span class="sr-only">(current)</span></a>
-                    </li>
+
                 </ul>
 
                 <form class="form-inline my-2 my-lg-0">
